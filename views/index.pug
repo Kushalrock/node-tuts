@@ -10,7 +10,7 @@
   <body>
     <nav>
       <div class="logo-space">
-        <img src="../official-logo.png" alt="logo" class="official-logo">
+        <img src="../static/official-logo.png" alt="logo" class="official-logo">
       </div>
       <ul>
         <li><a href="#">Home</a></li>
@@ -18,14 +18,43 @@
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
+      <div class="Login-btn">
+        <p><a href="#">Login</a></p>
+        <p class="SignUp-btn"><a href="#">Sign Up</a></p>
+      </div>
     </nav>
     <div class="container">
-      <form class="" action="/" id="contact">
-        <h1>50% OFF. Get Your Gym Membership now. HURRY!!.</h1>
-        <input type="text" name="name" placeholder="Enter Your Name: " id="name">
-        <input type="text" name="age" placeholder="Enter Your Age: " id="age">
-        <textarea name="address" rows="10" cols="30" id="address" placeholder="Where do you Live?">Address</textarea>
-      </form>
+      <div class="first-grp">
+        <h1>Get in touch</h1>
+        <h2>We are here for your help. 24 X 7 Service.</h2>
+        <form class="" action="index.html" method="post">
+          <h1> Drop us a line</h1>
+          <label for="name">Your Name</label>
+          <input type="text" name="name" placeholder="Enter Your Name:">
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Enter Your Email:">
+          <label for="message">Enter Message</label>
+          <textarea name="message" rows="8" cols="63"></textarea>
+          <button type="submit" name="Submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+      <div class="second-grp">
+        <h1>Or check out these resources</h1>
+        <div class="card">
+          <img src="" alt="">
+          <div class="card-text">
+            <h1>Follow us on twitter</h1>
+            <p>Discount Details, Special coupons, Giveaways and much many things are waiting for you.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="" alt="">
+          <div class="card-text">
+            <h1>Read about our services</h1>
+            <p>We believe in special tailormade service for all. Find out your special tailormade service.</p>
+          </div>
+        </div>
+      </div>
     </div>
     <!--<p>
       |#{content}

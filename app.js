@@ -3,6 +3,7 @@ const path = require('path');
 const port= 10000;
 const app = express();
 
+app.use('/static',express.static('public'));
 // PUG CONFIGURATION
 app.set('view engine','pug');
 app.set('views',path.join(__dirname,'views'));
