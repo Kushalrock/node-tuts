@@ -125,7 +125,7 @@ textarea{
   flex-direction: row;
 }
 .card img{
-  width: 50%;
+  width: 150px;
 }
 .card-text{
   display: flex;
