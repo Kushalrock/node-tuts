@@ -5,17 +5,6 @@ const app = express();
 //Serving Static files
 app.use('/static',express.static('public'));
 
-// Setting Your template engine to be pug
-app.set('view engine','pug');
-
-// Set the views directory
-app.set('views',path.join(__dirname,'views'));
-
-// Pug
-app.get('/demo',(req,res)=>{
-  res.render('demo', { title: 'Hey', message: 'Hello there!' })
-});
-
 app.get('/',(req,res)=>{
   res.send('Hey there, I am using express');
 });
