@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Plain Html in pug</title>
+    style
+      include ./style.css
+  </head>
+  <body>
+    <nav>
+      <div class="logo-space">
+        <img src="../official-logo.png" alt="logo" class="official-logo">
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <form class="" action="/" id="contact">
+        <h1>50% OFF. Get Your Gym Membership now. HURRY!!.</h1>
+        <input type="text" name="name" placeholder="Enter Your Name: " id="name">
+        <input type="text" name="age" placeholder="Enter Your Age: " id="age">
+        <textarea name="address" rows="10" cols="30" id="address" placeholder="Where do you Live?">Address</textarea>
+      </form>
+    </div>
+    <!--<p>
+      |#{content}
+      |Hey There
+    </p>-->
+  </body>
+</html>

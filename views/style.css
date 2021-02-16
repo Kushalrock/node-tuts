@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  box-sizing: border-box;
+}
+nav{
+  background-color: black;
+}
+ul{
+  display: flex;
+  list-style: none;
+  font-size: 2rem;
+  padding: 1rem;
+  justify-content: center;
+}
+li{
+  margin: 1rem;
+}
+li:first-child{
+  margin-left: 0;
+}
+li a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.container{
+  margin-top: 1rem;
+  background-color: #59f900;
+}
+#contact{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  align-items: center;
+}
+#contact h1{
+  font-size: 3rem;
+  margin-top: 1rem;
+  color: white;
+}
+input{
+  width: 50vw;
+  margin: 1rem;
+}
+textarea{
+  width: 50vw;
+  margin: 1rem;
+}

@@ -1,13 +1,17 @@
 const express = require('express');
 const path = require('path');
+const port= 10000;
 const app = express();
 
-// Setting Your template engine to be pug
+// PUG CONFIGURATION
 app.set('view engine','pug');
-
-// Set the views directory
 app.set('views',path.join(__dirname,'views'));
 
-app.listen(10000,()=>{
+// ENDPOINTS
+app.get('/',(req,res)=>{
+  const params = {content: 'This has been sent as params'};
+  res.status(200).render('index.pug',params);
+})
+app.listen(port,()=>{
   console.log("App Started");
 })
